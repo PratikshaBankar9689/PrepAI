@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6C63FF !important;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.12);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+html {
+  scroll-behavior: smooth;
+}
